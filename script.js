@@ -1,15 +1,15 @@
-const panels = document.querySelectorAll('.panel');
+const panels = document.querySelectorAll(".panel");
 
 //clickable marking function
-panels.forEach( panel => {
-    panel.addEventListener('click', () => {
+panels.forEach((panel) => {
+    panel.addEventListener("click", () => {
         removeActiveClasses();
-        panel.classList.add('active');  
-    })
-})
+        panel.classList.add("active");
+    });
+});
 //function for deleting markings
 const removeActiveClasses = () => {
-    panels.forEach( panel => {
-        panel.classList.remove('active');
-    })
-}
+    panels.forEach((panel) => {
+        panel.classList.remove("active");
+    });
+};
